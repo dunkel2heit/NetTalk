@@ -15,6 +15,7 @@ def get_local_ip():
     return ip
 
 ip = get_local_ip()
+os.makedirs("data", exist_ok=True)
 
 if os.path.exists("data/user.json"):
     with open("data/user.json", "r") as f:
